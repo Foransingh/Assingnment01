@@ -7,7 +7,7 @@ public static void main(String args[])
 		if(i%15==0)
 			{
 			System.out.println("FIZZBUZZ");
-			i++;
+			
 			}
 		else if(i%5==0)
 			{

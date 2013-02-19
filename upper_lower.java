@@ -15,3 +15,9 @@ public static void main(String args[])
 		}
 	}
 }
+
+
+/* if(c>'A'&& c<='Z')
+{
+c=char(c+32)
+}*/
