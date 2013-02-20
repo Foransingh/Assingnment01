@@ -12,9 +12,9 @@ int sub(int a, int b)
 	}
 }
 
-public class calculator_test
+public class calculatortest
 {
-public static void main(String args[])
+public static void main(System args[])
 	{
 	calculator c=new calculator();
 	calculator d=new calculator();

@@ -1,6 +1,6 @@
-class BankAccountDetails
+class Bank_account
 {
-String name,acc_no;
+	String name,acc_no;
 	double acc_bal;
 	void set_detail(String a,String b,double c)
 		{	
@@ -39,18 +39,20 @@ String name,acc_no;
 			System.out.println("name change to " +name);
 		}
 }
-public class AccountCreation
+public class Bank
 {
 	public static void main(String[] args)
 		{
-			Bank_account [] ob=new Bank_account[20];
-		for(int i=0;i<=9;i++)
-			{
-			ob.set_detail("Angel","SBI430",100000.00+i);
+			Bank_account ob=new Bank_account();
+			ob.set_detail("Angel","SBI430",100000.00);
 			ob.deposit(3489.00);
 			ob.withdraw(11113456.00);
 			ob.change_name("Ashlesha");
 			ob.check_bal();
-			}
 		}
 }
+
+
+/*float is of 32 bit but double is of 64 bits. Double is also for floating point number*/
+/*ob is a referance variable to bank account*//*if a new obj is created then it is also a referance variable to bank account and it also contain name,acc_no and acc_
+balance. Like this data hiding take place in java*/

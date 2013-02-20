@@ -1,14 +1,15 @@
 class BankAccountDetails
 {
-String name,acc_no;
+	String name;
+	int acc_no;
 	double acc_bal;
-	void set_detail(String a,String b,double c)
+	void set_detail(String a,int b,double c)
 		{	
 			name=a;
 			acc_no=b;
 			acc_bal=c;
 			System.out.println("Name is "  +name);
-			System.out.println("Account no is"  +acc_no);
+			System.out.println("Account no is SBI"+acc_no);
 			System.out.println("Account Balance is" +acc_bal);
 		}
 	void withdraw(double a)
@@ -43,14 +44,16 @@ public class AccountCreation
 {
 	public static void main(String[] args)
 		{
-			Bank_account [] ob=new Bank_account[20];
+			BankAccountDetails [] ob=new BankAccountDetails[20];
 		for(int i=0;i<=9;i++)
 			{
-			ob.set_detail("Angel","SBI430",100000.00+i);
-			ob.deposit(3489.00);
-			ob.withdraw(11113456.00);
-			ob.change_name("Ashlesha");
-			ob.check_bal();
+			ob[i]=new BankAccountDetails();
+			ob[i].set_detail("Angel",430+i,100000.00);
+			ob[i].deposit(3489.00);
+			ob[i].withdraw(11113456.00);
+			ob[i].change_name("Ashlesha");
+			ob[i].check_bal();
+			System.out.println();
 			}
 		}
 }
