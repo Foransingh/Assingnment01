@@ -1,4 +1,4 @@
-class worm
+class worm1
 {
 	int power(int base,int p)
 	{
@@ -30,7 +30,7 @@ class worm
 			temp=((num%10)*power(10,count))+temp;
 			num=num/10;
 			count++;
-
+			break;
 			
 			}
 		}
@@ -38,11 +38,11 @@ class worm
 	}	
 }
 
-class newwormtest
+class allwormtest
 {
 	public static void main(String args[])
 	{
- 	worm w=new worm();
- 	w.testnum(8086,0);
+ 	worm1 w=new worm1();
+ 	w.testnum(8086,8);
 	}
 }
